@@ -17,26 +17,26 @@ html[tdl-theme].tdl-theme {
     --yt-spec-text-primary-inverse: #333;
     --yt-spec-text-secondary: #e6e6e6;
     --yt-spec-text-disabled: #b8b8b8;
-    --yt-spec-call-to-action: #065fd4;
-    --yt-spec-call-to-action-inverse: #3ea6ff;
+    --yt-spec-call-to-action: #3ea6ff;
+    --yt-spec-call-to-action-inverse: #065fd4;
     --yt-spec-suggested-action: #def1ff;
     --yt-spec-suggested-action-inverse: #263850;
-    --yt-spec-icon-active-other: #606060;
+    --yt-spec-icon-active-other: #d2d2d2;
     --yt-spec-icon-inactive: #909090;
     --yt-spec-icon-disabled: #ccc;
     --yt-spec-badge-chip-background: rgba(0, 0, 0, 0.05);
-    --yt-spec-verified-badge-background: rgba(0, 0, 0, 0.15);
-    --yt-spec-button-chip-background-hover: rgba(0, 0, 0, 0.1);
-    --yt-spec-touch-response: #000;
-    --yt-spec-touch-response-inverse: #fff;
+    --yt-spec-verified-badge-background: rgba(105, 105, 105, 0.15);
+    --yt-spec-button-chip-background-hover: rgba(101, 101, 101, 0.1);
+    --yt-spec-touch-response: #c4c4c4;
+    --yt-spec-touch-response-inverse: #000000;
     --yt-spec-brand-icon-active: #f00;
-    --yt-spec-brand-icon-inactive: #606060;
+    --yt-spec-brand-icon-inactive: #e7e7e7;
     --yt-spec-brand-button-background: #c00;
     --yt-spec-brand-link-text: #c00;
-    --yt-spec-wordmark-text: #212121;
-    --yt-spec-10-percent-layer: rgba(0, 0, 0, 0.1);
-    --yt-spec-snackbar-background: #212121;
-    --yt-spec-snackbar-background-updated: #181818;
+    --yt-spec-wordmark-text: #c7c7c7;
+    --yt-spec-10-percent-layer: rgba(194, 194, 194, 0.1);
+    --yt-spec-snackbar-background: #868686;
+    --yt-spec-snackbar-background-updated: #858585;
     --yt-spec-error-indicator: #990412;
     --yt-spec-themed-blue: #065fd4;
     --yt-spec-themed-green: #107516;
@@ -45,7 +45,7 @@ html[tdl-theme].tdl-theme {
     --yt-spec-commerce-badge-background: #deffde;
     --yt-spec-static-brand-red: #f00;
     --yt-spec-static-brand-white: #fff;
-    --yt-spec-static-brand-black: #212121;
+    --yt-spec-static-brand-black: #cbcbcb;
     --yt-spec-static-clear-color: rgba(255, 255, 255, 0);
     --yt-spec-static-clear-black: rgba(0, 0, 0, 0);
     --yt-spec-static-ad-yellow: #fbc02d;
@@ -88,4 +88,17 @@ html[tdl-theme].tdl-theme {
     --yt-spec-filled-button-text: #fff;
     --yt-spec-paper-tab-ink: rgba(0, 0, 0, 0.3);
     --yt-spec-selected-nav-text: #c00;
+}
+
+html[tdl-theme].tdl-theme .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text,
+html[tdl-theme].tdl-theme ytd-searchbox[system-icons] #search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox {
+    color: var(--yt-spec-text-primary-inverse);
+}
+
+ .yt-spec-icon-badge-shape.yt-spec-icon-badge-shape--type-notification {
+    color: var(--yt-spec-text-primary);
+}
+
+html[tdl-theme].tdl-theme.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
+    background-color: var(--yt-spec-static-grey);
 }

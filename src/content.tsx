@@ -1,17 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
-import App from "./App";
+import Settings from "./root-components/settings";
+import ThemeStyles from "@/root-components/theme-styles";
 import { waitForElement } from "./utils/observe";
 
 const settingsRoot = document.createElement("div");
-settingsRoot.id = "crx-root";
+settingsRoot.id = "tdl-settings-root";
+
+const stylesRoot = document.createElement("div");
+stylesRoot.id = "tdl-styles-root";
+document.body.append(stylesRoot);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Settings />
   </React.StrictMode>,
   settingsRoot
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <ThemeStyles />
+  </React.StrictMode>,
+  stylesRoot
 );
 
 (() => {

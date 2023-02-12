@@ -1,11 +1,10 @@
-import styles from "./styles.css";
 import css from "./index.module.scss";
 import cn from "classnames";
-import { useToggle } from "./hooks";
-import { Modal } from "@mui/material";
+import { useToggle } from "@/hooks";
+import { Modal } from "@/modules/modal";
 
-function App() {
-  const [open, _toggle] = useToggle(false);
+function Settings() {
+  const [open, _togglePopup] = useToggle(false);
 
   const togglePopup = () => {
     if (open) {
@@ -14,12 +13,11 @@ function App() {
       document.body.classList.add("overflow-hidden");
     }
 
-    _toggle();
+    _togglePopup();
   };
 
   return (
     <>
-      <style>{styles}</style>
       <div>
         <button
           type="button"
@@ -33,10 +31,10 @@ function App() {
       </div>
 
       <Modal open={open} onClose={togglePopup}>
-        <div>Some content</div>
+        <div>Some more content</div>
       </Modal>
     </>
   );
 }
 
-export default App;
+export default Settings;

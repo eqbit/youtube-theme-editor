@@ -1,7 +1,7 @@
 .menuButton {
   margin: 0 12px;
   border-radius: 10px;
-  width: calc(100% - 20px);
+  width: calc(100% - 25px);
   padding: 0 16px;
   cursor: pointer;
   background-color: transparent;
@@ -11,10 +11,10 @@
   border: 0;
   text-align: left;
   height: 40px;
-  color: var(--yt-spec-error-background);
+  color: var(--yt-spec-text-primary);
 
   &:hover {
-    background-color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.15);
   }
 
   &Active {

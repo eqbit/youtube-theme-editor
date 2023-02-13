@@ -119,7 +119,6 @@ html[tdl-theme].tdl-theme .playlist-items.ytd-playlist-panel-renderer {
     background: var(--yt-spec-text-primary-inverse);
 }
 
-html[tdl-theme].tdl-theme ytd-comment-action-buttons-renderer#action-buttons
-.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text {
+html[tdl-theme].tdl-theme ytd-comment-action-buttons-renderer#action-buttons .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text {
     color: var(--yt-spec-text-primary);
 }

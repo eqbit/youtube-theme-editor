@@ -1,11 +1,17 @@
-import darkThemeStyles from "./dark-theme-styles.css";
 import { useEffect, useState } from "react";
+import { getSavedTheme } from "@/utils/storage";
+import { getThemeCssByName } from "@/root-components/utils/get-theme";
 
 const ThemeStyles = () => {
   const [theme, setTheme] = useState<string>();
 
   useEffect(() => {
-    setTheme(darkThemeStyles);
+    getSavedTheme().then((theme) => {
+      if (!theme) return;
+
+      const themeCss = getThemeCssByName(theme);
+      setTheme(themeCss);
+    });
   }, []);
 
   useEffect(() => {
@@ -17,7 +23,7 @@ const ThemeStyles = () => {
     html.setAttribute("tdl-theme", "");
   }, []);
 
-  return <style>{theme}</style>;
+  return <>{theme}</>;
 };
 
 export default ThemeStyles;

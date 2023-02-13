@@ -8,7 +8,7 @@ import { waitForElement } from "./utils/observe";
 const settingsRoot = document.createElement("div");
 settingsRoot.id = "tdl-settings-root";
 
-const stylesRoot = document.createElement("div");
+const stylesRoot = document.createElement("style");
 stylesRoot.id = "tdl-styles-root";
 document.head.append(stylesRoot);
 

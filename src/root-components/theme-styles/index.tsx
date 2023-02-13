@@ -1,7 +1,13 @@
-import styles from "./styles.css";
-import { useEffect } from "react";
+import darkThemeStyles from "./dark-theme-styles.css";
+import { useEffect, useState } from "react";
 
 const ThemeStyles = () => {
+  const [theme, setTheme] = useState<string>();
+
+  useEffect(() => {
+    setTheme(darkThemeStyles);
+  }, []);
+
   useEffect(() => {
     const html = document.querySelector("html");
 
@@ -11,7 +17,7 @@ const ThemeStyles = () => {
     html.setAttribute("tdl-theme", "");
   }, []);
 
-  return <style>{styles}</style>;
+  return <style>{theme}</style>;
 };
 
 export default ThemeStyles;

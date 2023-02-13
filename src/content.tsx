@@ -10,7 +10,7 @@ settingsRoot.id = "tdl-settings-root";
 
 const stylesRoot = document.createElement("div");
 stylesRoot.id = "tdl-styles-root";
-document.body.append(stylesRoot);
+document.head.append(stylesRoot);
 
 ReactDOM.render(
   <React.StrictMode>

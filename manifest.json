@@ -6,7 +6,8 @@
   "content_scripts": [
     {
       "js": ["src/content.tsx"],
-      "matches": ["https://www.youtube.com/*"]
+      "matches": ["https://www.youtube.com/*"],
+      "run_at": "document_start"
     }
   ]
 }

@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
 import "./index.scss";
 import Settings from "./root-components/settings";
 import ThemeStyles from "@/root-components/theme-styles";
 import { waitForElement } from "./utils/observe";
+import { store } from "@/store";
 
 const settingsRoot = document.createElement("div");
 settingsRoot.id = "tdl-settings-root";
@@ -13,16 +15,16 @@ stylesRoot.id = "tdl-styles-root";
 document.head.append(stylesRoot);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <Settings />
-  </React.StrictMode>,
+  </Provider>,
   settingsRoot
 );
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <ThemeStyles />
-  </React.StrictMode>,
+  </Provider>,
   stylesRoot
 );
 

@@ -2,6 +2,7 @@ import css from "./index.module.scss";
 import cn from "classnames";
 import { useToggle } from "@/hooks";
 import { Modal } from "@/modules/modal";
+import { ThemeList } from "@/containers/theme-list";
 
 function Settings() {
   const [open, _togglePopup] = useToggle(false);
@@ -31,7 +32,7 @@ function Settings() {
       </div>
 
       <Modal open={open} onClose={togglePopup}>
-        <div>Some more content</div>
+        <ThemeList />
       </Modal>
     </>
   );

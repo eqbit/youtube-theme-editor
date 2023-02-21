@@ -1,4 +1,4 @@
-import darkThemeStyles from "../theme-styles/dark-theme-styles.css?inline";
+import darkThemeStyles from "../theme-styles/dark-theme-styles.scss?inline";
 import { Theme } from "@/enums/themes";
 
 export const getThemeCssByName = (theme: Theme) => {

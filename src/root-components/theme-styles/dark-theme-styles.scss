@@ -126,3 +126,12 @@ html[tdl-theme].tdl-theme ytd-comment-action-buttons-renderer#action-buttons .yt
 html[tdl-theme].tdl-theme div#filter-menu .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text {
     color: var(--yt-spec-text-primary);
 }
+
+html[tdl-theme].tdl-theme {
+    #info-bar.ytd-miniplayer .metadata.ytd-miniplayer,
+    #details.ytd-video-preview,
+    ytd-video-preview[mini-mode] #buttons.ytd-video-preview,
+    ytd-video-preview[pop-out] #video-preview-container.ytd-video-preview {
+        background: var(--yt-spec-base-background)
+    }
+}
